@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router';
 import { useCities } from '../contexts/CitiesContext';
 import Spinner from '../components/Spinner';
-// import { useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 
 import styles from './City.module.css';
 import BackButton from './BackButton';
@@ -27,7 +27,7 @@ function City() {
     [id]
   );
 
-  // const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   // const lat = searchParams.get('lat');
   // const lng = searchParams.get('lng');
   // TEMP DATA
